@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="hint_id">Enter Your Id</string>
+    <string name="submit">Submit</string>
+</resources>
