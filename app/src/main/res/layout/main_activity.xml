@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/etId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -22,7 +22,7 @@
         android:textColorHint="@color/white" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -32,11 +32,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
-        android:gravity="center_horizontal"
-        android:text="TextView"
+        android:gravity="start"
         android:textColor="@color/white" />
 </LinearLayout>
