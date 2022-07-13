@@ -2,4 +2,7 @@
     <string name="app_name">MyApplication</string>
     <string name="hint_id">Enter Your Id</string>
     <string name="submit">Submit</string>
+    <string name="intro">Did you know you can determine the temperature outside by counting the number of chirps the cricket makes? Just count the number of chirps one makes in 25 seconds and place that number in the box below:</string>
+    <string name="calculate">Calculate Temrature</string>
+    <string name="reslut">The predicted outside temperature in Celcius degree is :</string>
 </resources>
