@@ -2,4 +2,8 @@
     <string name="app_name">MyApplication</string>
     <string name="hint_id">Enter Your Id</string>
     <string name="submit">Submit</string>
+    <string name="birthS">Year of birth : </string>
+    <string name="genderS">Gender : </string>
+    <string name="citznS">Citizenship : </string>
+    <string name="raceS">Race : </string>
 </resources>

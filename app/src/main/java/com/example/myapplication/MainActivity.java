@@ -39,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 String month = dateB.substring(2, 4);
                 String day = dateB.substring(4, 6);
 
-                String gender = genderN < 5000 ? "female" : "male";
+                String gender = genderN < 5 ? "female" : "male";
                 String citzn = citznN == 0 ? "SA Citizen" : citznN == 1 ? "Permanent Citizen" : "Unknown";
                 String race = raceN == 0 ? "Black" : citznN == 1 ? "white" : "Other"; //no offense
 
-                String text = "Year of birth : " + day + "/" + month + "/" + year + "\n" +
-                        "Gender : " + gender + "\n" +
-                        "Citizenship : " + citzn +"\n" +
-                        "Race : " + race;
+                String text = getString(R.string.birthS) +" "+ day + "/" + month + "/" + year + "\n" +
+                        getString(R.string.genderS) + " "+gender + "\n" +
+                        getString(R.string.citznS) + " "+citzn +"\n" +
+                        getString(R.string.raceS) + " "+race;
                 tvId.setText(text);
 
 
