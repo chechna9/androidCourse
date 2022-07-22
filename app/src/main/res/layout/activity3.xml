@@ -8,35 +8,31 @@
     android:orientation="vertical"
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
-    tools:context=".MainActivity">
+    tools:context=".Activity3">
 
     <EditText
-        android:id="@+id/etId1"
+        android:id="@+id/etSurname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:hint="Please enter your name"
+        android:hint="Please enter Your Surname"
         android:inputType="textPersonName"
-        android:textColor="#EFEEEE" />
+        android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/act2"
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 2" />
+        android:text="@string/submit"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/act3"
+        android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 3" />
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data from activity 3  will be shown here"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:backgroundTint="@color/white"
+        android:text="Cancel"
+        android:textColor="@color/LightPrim"
+        android:textStyle="bold" />
 </LinearLayout>
