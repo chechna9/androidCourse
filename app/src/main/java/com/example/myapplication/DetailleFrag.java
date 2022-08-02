@@ -22,7 +22,7 @@ public class DetailleFrag extends Fragment  {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_detaille, container, false);
         tv = (TextView)rootView.findViewById(R.id.tvDescr);
-
+        tv.setText(getResources().getStringArray(R.array.descriptions)[0]);
         return rootView;
     }
 

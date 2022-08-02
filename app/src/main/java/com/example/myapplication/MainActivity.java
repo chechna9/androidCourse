@@ -19,33 +19,21 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Item
 
     private TextView tvDescription;
 
-    ArrayList<String> description;
+    String[] description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
-//
 
-        description = new ArrayList<String>();
-
-        description.add("Description for item 1 ");
-        description.add("Description for item 2 ");
-        description.add("Description for item 3 ");
-
-
+        description = getResources().getStringArray(R.array.descriptions);
+//        onItemSelected(0);
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull String name, @NonNull Context context, @NonNull AttributeSet attrs) {
-        return super.onCreateView(name, context, attrs);
-
-    }
 
     @Override
-    public void onItemSelected(int index) {
-        DetailleFrag.updateTv(description.get(index));
+    public  void onItemSelected(int index) {
+        DetailleFrag.updateTv(description[index]);
 
     }
 }
