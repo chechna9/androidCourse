@@ -15,11 +15,14 @@ import java.util.zip.Inflater;
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder> {
     private ArrayList<Person> people;
-
+    ItemClicked activity;
     public PersonAdapter(Context context, ArrayList list) {
         people = list;
+        activity = (ItemClicked) context;
     }
-
+    public interface ItemClicked{ // create interface to be reused
+        void onItemCLicked(int index);
+    }
     //link the layout
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivPref;
@@ -34,13 +37,14 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    activity.onItemCLicked(people.indexOf((Person)view.getTag()));
                 }
             });
         }
 
 
     }
+    //link the layout
 
     @NonNull
     @Override
